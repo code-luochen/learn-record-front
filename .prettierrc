@@ -1,4 +1,9 @@
 {
-  "singleQuote": true,
-  "semi": false
+	"singleQuote": true,
+	"semi": false,
+	"experimentalTernaries": true,
+	"tabWidth": 4,
+	"useTabs": true,
+	"bracketSameLine": false,
+	"arrowParens": "avoid"
 }
