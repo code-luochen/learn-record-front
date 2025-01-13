@@ -5,6 +5,9 @@ settings:
   excludeLinksFromLockfile: false
 
 dependencies:
+  cross:
+    specifier: ^1.0.0
+    version: 1.0.0
   element-plus:
     specifier: ^2.9.2
     version: 2.9.2(vue@3.5.13)
@@ -20,6 +23,9 @@ dependencies:
   lint-staged:
     specifier: ^15.3.0
     version: 15.3.0
+  pinia:
+    specifier: ^2.3.0
+    version: 2.3.0(typescript@5.6.3)(vue@3.5.13)
   prettier:
     specifier: ^3.4.2
     version: 3.4.2
@@ -745,6 +751,10 @@ packages:
       he: 1.2.0
     dev: true
 
+  /@vue/devtools-api@6.6.4:
+    resolution: {integrity: sha512-sGhTPMuXqZ1rVOk32RylztWkfXTRhuS7vgAKv0zjqk8gbsHkJ7xfFf+jbySxt7tWObEJwyKaHMikV/WGDiQm8g==}
+    dev: false
+
   /@vue/language-core@2.1.10(typescript@5.6.3):
     resolution: {integrity: sha512-DAI289d0K3AB5TUG3xDp9OuQ71CnrujQwJrQnfuZDwo6eGNf0UoRlPuaVNO+Zrn65PC3j0oB2i7mNmVPggeGeQ==}
     peerDependencies:
@@ -1014,6 +1024,10 @@ packages:
       path-key: 3.1.1
       shebang-command: 2.0.0
       which: 2.0.2
+    dev: false
+
+  /cross@1.0.0:
+    resolution: {integrity: sha512-p6hXbCnjuIB4bhKWFeztQd7VwffgQP9zOBzUoiA8Lvi01RzQY0e7PbPFU/uqVPTM2stY7uCpVck1UTPpxhinMQ==}
     dev: false
 
   /css-functions-list@3.2.3:
@@ -1897,6 +1911,23 @@ packages:
     resolution: {integrity: sha512-eG2dWTVw5bzqGRztnHExczNxt5VGsE6OwTeCG3fdUf9KBsZzO3R5OIIIzWR+iZA0NtZ+RDVdaoE2dK1cn6jH4g==}
     engines: {node: '>=0.10'}
     hasBin: true
+    dev: false
+
+  /pinia@2.3.0(typescript@5.6.3)(vue@3.5.13):
+    resolution: {integrity: sha512-ohZj3jla0LL0OH5PlLTDMzqKiVw2XARmC1XYLdLWIPBMdhDW/123ZWr4zVAhtJm+aoSkFa13pYXskAvAscIkhQ==}
+    peerDependencies:
+      typescript: '>=4.4.4'
+      vue: ^2.7.0 || ^3.5.11
+    peerDependenciesMeta:
+      typescript:
+        optional: true
+    dependencies:
+      '@vue/devtools-api': 6.6.4
+      typescript: 5.6.3
+      vue: 3.5.13(typescript@5.6.3)
+      vue-demi: 0.14.10(vue@3.5.13)
+    transitivePeerDependencies:
+      - '@vue/composition-api'
     dev: false
 
   /postcss-resolve-nested-selector@0.1.6:
