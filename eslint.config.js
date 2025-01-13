@@ -1,3 +1,5 @@
+import vueEslintParser from 'vue-eslint-parser'
+
 export default [
 	// js.configs.recommended,
 	// {
@@ -7,4 +9,12 @@ export default [
 	// 		'prefer-const': 'error',
 	// 	},
 	// },
+	{
+		files: ['./**/*.vue'],
+		languageOptions: {
+			ecmaVersion: 'latest',
+			sourceType: 'module',
+			parser: vueEslintParser,
+		},
+	},
 ]
